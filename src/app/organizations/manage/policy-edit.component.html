@@ -50,14 +50,14 @@
                 </div>
                 <ng-container *ngIf="type === policyType.MasterPassword">
                     <div class="row">
-                        <div class="col-6 form-group">
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 form-group">
                             <label for="masterPassMinComplexity">{{'minComplexityScore' | i18n}}</label>
                             <select id="masterPassMinComplexity" name="MasterPassMinComplexity"
                                 [(ngModel)]="masterPassMinComplexity" class="form-control">
                                 <option *ngFor="let o of passwordScores" [ngValue]="o.value">{{o.name}}</option>
                             </select>
                         </div>
-                        <div class="col-6 form-group">
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 form-group">
                             <label for="masterPassMinLength">{{'minLength' | i18n}}</label>
                             <input id="masterPassMinLength" class="form-control" type="number" min="8"
                                 name="MasterPassMinLength" [(ngModel)]="masterPassMinLength">
@@ -86,7 +86,7 @@
                 </ng-container>
                 <ng-container *ngIf="type === policyType.PasswordGenerator">
                     <div class="row">
-                        <div class="col-6 form-group  mb-0">
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 form-group  mb-0">
                             <label for="passGenDefaultType">{{'defaultType' | i18n}}</label>
                             <select id="passGenDefaultType" name="PassGenDefaultType" [(ngModel)]="passGenDefaultType"
                                 class="form-control">
@@ -96,19 +96,19 @@
                     </div>
                     <h3 class="mt-4">{{'password' | i18n}}</h3>
                     <div class="row">
-                        <div class="col-6 form-group">
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 form-group">
                             <label for="passGenMinLength">{{'minLength' | i18n}}</label>
                             <input id="passGenMinLength" class="form-control" type="number" name="PassGenMinLength"
                                 min="5" max="128" [(ngModel)]="passGenMinLength">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 form-group">
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 form-group">
                             <label for="passGenMinNumbers">{{'minNumbers' | i18n}}</label>
                             <input id="passGenMinNumbers" class="form-control" type="number" name="PassGenMinNumbers"
                                 min="0" max="9" [(ngModel)]="passGenMinNumbers">
                         </div>
-                        <div class="col-6 form-group">
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 form-group">
                             <label for="passGenMinSpecial">{{'minSpecial' | i18n}}</label>
                             <input id="passGenMinSpecial" class="form-control" type="number" name="PassGenMinSpecial"
                                 min="0" max="9" [(ngModel)]="passGenMinSpecial">
@@ -136,7 +136,7 @@
                     </div>
                     <h3 class="mt-4">{{'passphrase' | i18n}}</h3>
                     <div class="row">
-                        <div class="col-6 form-group">
+                        <div class="col-12 col-md-6 mt-4 mt-md-0 form-group">
                             <label for="passGenMinNumberWords">{{'minimumNumberOfWords' | i18n}}</label>
                             <input id="passGenMinNumberWords" class="form-control" type="number"
                                 name="PassGenMinNumberWords" min="3" max="20" [(ngModel)]="passGenMinNumberWords">

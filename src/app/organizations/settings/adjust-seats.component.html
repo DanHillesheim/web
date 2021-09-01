@@ -4,7 +4,7 @@
                 aria-hidden="true">&times;</span></button>
         <h3 class="card-body-header">{{(add ? 'addSeats' : 'removeSeats') | i18n}}</h3>
         <div class="row">
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="seatAdjustment">{{(add ? 'seatsToAdd' : 'seatsToRemove') | i18n}}</label>
                 <input id="seatAdjustment" class="form-control" type="number" name="SeatAdjustment"
                     [(ngModel)]="seatAdjustment" min="0" step="1" required>

@@ -66,11 +66,11 @@ $btn-font-weight: 600;
 $lead-font-weight: normal;
 
 $grid-breakpoints: (
-  xs: 0,
-  sm: 1px,
-  md: 2px,
-  lg: 3px,
-  xl: 4px
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
 );
 
 $text-color: #333333;
@@ -122,6 +122,7 @@ $themes: (
         badgeSecondaryBackground: #ced4da,
         bgPrimaryColor: $primary,
         bgLightColor: #f8f9fa,
+        bgSwapColor: rgba(0, 0, 0, 0.03),
         borderColor: $border-color,
         borderPrimaryColor: $primary,
         btnDanger: $danger,
@@ -204,6 +205,7 @@ $themes: (
         badgeSecondaryBackground: $darkDarkBlue2,
         bgPrimaryColor: $darkPrimary,
         bgLightColor: $darkDarkBlue2,
+        bgSwapColor: $darkDarkBlue2,
         borderColor: $darkBlue1,
         borderPrimaryColor: $darkPrimary,
         btnDanger: $darkDanger,
@@ -223,10 +225,11 @@ $themes: (
         calloutBackground: $darkDarkBlue2,
         cdkDraggingBackground: $darkDarkBlue1,
         codeColor: #e83e8c,
-        dropdownBackground: $darkGrey1,
+        dropdownBackground: $darkDarkBlue2,
         dropdownDangerHover: $darkDangerHover,
-        dropdownHover: rgba(0,0,0,0.03),
-        dropdownTextMuted: $darkBlue1,
+        dropdownHover: $darkGrey2,
+        dropdownText: $darkDarkBlue2,
+        dropdownTextMuted: $darkGrey2,
         footerBackgroundColor: $darkDarkBlue2,
         foregroundColor: $darkDarkBlue2,
         headerColor: rgba(0,0,0,0.1),

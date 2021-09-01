@@ -1,11 +1,20 @@
 .dropdown-menu, .dropdown-item  {
     @include themify($themes) {
         background-color: themed('dropdownBackground');
-        color: themed('darkTextColor');
+        color: themed('darkGrey1');
+    }
+}
+.dropdown-divider {
+    @include themify($themes) {
+        border-color: rgba(0, 0, 0, 0.125)
     }
 }
 
 .dropdown-item {
+    @include themify($themes) {
+        color: themed('darkGrey1');
+    }
+
     &.text-danger {
         color: #FFFFFF !important;
         @include themify($themes) {
@@ -22,7 +31,7 @@
     &:hover:not(.text-danger) {
         @include themify($themes) {
             background-color: themed('dropdownHover');
-            color: themed('darkTextColor');
+            color: themed('dropdownText');
         }
     }
     &:active{
@@ -33,6 +42,15 @@
 .dropdown-menu {
     button {
         cursor: pointer;
+        @include themify($themes) {
+            color: themed('textMuted');
+        }
+        &:hover:not(.text-danger) {
+            @include themify($themes) {
+                background-color: themed('dropdownHover') !important;
+                color: themed('dropdownText') !important;
+            }
+        }
     }
 }
 
